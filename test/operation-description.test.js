@@ -1,7 +1,7 @@
 import test from 'ava'
-import lib from '../lib'
+import swaggerHalper from '..'
 
-const { getOperation } = lib
+const { getOperation } = swaggerHalper
 
 test('should allow specification of a summary', t => {
   const options = { summary: 'test' }

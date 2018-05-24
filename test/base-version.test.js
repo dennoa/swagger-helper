@@ -1,7 +1,7 @@
 import test from 'ava'
-import lib from '../lib'
+import swaggerHelper from '..'
 
-const { swagger } = lib.getBase()
+const { swagger } = swaggerHelper.getBase()
 
 test('should support swagger 2.0', t => {
   t.is(swagger, '2.0')

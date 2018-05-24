@@ -1,18 +1,18 @@
 {
-  "name": "@firemark/swagger-helper",
-  "version": "2.0.0",
+  "name": "@dennoa/swagger-helper",
+  "version": "1.0.0",
   "description": "Help to create consistent swagger documentation for an api",
   "main": "index.js",
   "engines": {
     "node": ">=8.9"
   },
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "test"
   },
   "scripts": {
     "coverage": "nyc npm test && nyc report --reporter html",
-    "lint": "eslint lib",
+    "lint": "eslint src",
     "test": "ava"
   },
   "repository": {
@@ -40,14 +40,8 @@
   "eslintConfig": {
     "extends": "airbnb-base",
     "rules": {
-      "indent": [
-        0,
-        4
-      ],
-      "semi": [
-        "error",
-        "never"
-      ],
+      "indent": [0, 4],
+      "semi": ["error", "never"],
       "arrow-parens": 0,
       "comma-dangle": 0,
       "linebreak-style": 0,
@@ -69,8 +63,6 @@
     "failWithoutAssertions": false,
     "tap": true,
     "compileEnhancements": false,
-    "require": [
-      "@std/esm"
-    ]
+    "require": ["@std/esm"]
   }
 }

@@ -1,3 +1,3 @@
-'use strict';
+import swaggerHelper from './src'
 
-module.exports = require('./lib');
+export default swaggerHelper

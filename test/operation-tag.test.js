@@ -1,7 +1,7 @@
 import test from 'ava'
-import lib from '../lib'
+import swaggerHelper from '..'
 
-const { getOperation } = lib
+const { getOperation } = swaggerHelper
 
 test('should allow specification of a single tag', t => {
   const options = { tag: 'test' }

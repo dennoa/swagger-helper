@@ -1,7 +1,7 @@
 import test from 'ava'
-import lib from '../lib'
+import swaggerHelper from '..'
 
-const { getOperation } = lib
+const { getOperation } = swaggerHelper
 
 const statusCodes = ['204', '401', '404', '500']
 statusCodes.forEach(code => {
