@@ -1,5 +1,5 @@
 {
-  "name": "@dennoa/swagger-helper",
+  "name": "swagger-doc-helper",
   "version": "1.0.0",
   "description": "Help to create consistent swagger documentation for an api",
   "main": "index.js",
