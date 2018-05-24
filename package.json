@@ -1,0 +1,76 @@
+{
+  "name": "@firemark/swagger-helper",
+  "version": "2.0.0",
+  "description": "Help to create consistent swagger documentation for an api",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "coverage": "nyc npm test && nyc report --reporter html",
+    "lint": "eslint lib",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iag-edge-labs/swagger-helper.git"
+  },
+  "author": "dennoa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iag-edge-labs/swagger-helper/issues"
+  },
+  "homepage": "https://github.com/iag-edge-labs/swagger-helper#readme",
+  "@std/esm": "cjs",
+  "dependencies": {},
+  "devDependencies": {
+    "@std/esm": "^0.21.7",
+    "ava": "^0.25.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nyc": "^11.4.1",
+    "sinon": "^2.3.8",
+    "swagger-parser": "^4.0.2"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "indent": [
+        0,
+        4
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "arrow-parens": 0,
+      "comma-dangle": 0,
+      "linebreak-style": 0,
+      "object-curly-newline": 0,
+      "no-underscore-dangle": 0,
+      "max-len": [
+        1,
+        150,
+        4,
+        {
+          "ignorePattern": "\\s*<"
+        }
+      ]
+    }
+  },
+  "ava": {
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "compileEnhancements": false,
+    "require": [
+      "@std/esm"
+    ]
+  }
+}
