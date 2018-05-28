@@ -1,4 +1,4 @@
-# swagger-helper
+# swagger-doc-helper
 
 Help to create consistent swagger v2.0 documentation for an api. It makes a lot of assumptions in an attempt to be less verbose most of the time. Where it doesn't provide the flexibility required, just merge swagger fragments as you might otherwise do.
 
@@ -12,7 +12,7 @@ See test/index.js for a contrived usage example.
 
 1.  Get the base documentation. This returns a Javascript Object with the required swagger doc structure and some common bits such as security and standard responses. The intent is that swagger paths, definitions, etc. specific to each operation are added to this.
 
-        import swaggerHelper from 'swagger-helper'
+        import swaggerHelper from 'swagger-doc-helper'
 
         // Get the base JSON with the swagger doc structure and some common bits.
         // This gives valid swagger documentation, just with no paths as yet
