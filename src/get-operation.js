@@ -59,6 +59,9 @@ const getOperation = options => ({
   responses: getResponses(options),
 })
 
+const getUnauthenticatedOperation = options => Object.assign(getOperation(options), { security: [] })
+
 export default function get(options) {
-  return getOperation(options || {})
+  const opts = options || {}
+  return opts.no401 ? getUnauthenticatedOperation(opts) : getOperation(opts)
 }

@@ -1,6 +1,6 @@
 {
   "name": "swagger-doc-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Help to create consistent swagger documentation for an api",
   "main": "index.js",
   "engines": {
