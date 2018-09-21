@@ -1,7 +1,5 @@
-import test from 'ava'
-import swaggerHelper from '..'
-
-const { getOperation } = swaggerHelper
+const test = require('ava')
+const { getOperation } = require('..')
 
 test('should include security on authenticated operations', t => {
   const op = getOperation({ reqBody: 'test' })

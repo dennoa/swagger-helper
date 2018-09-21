@@ -61,7 +61,7 @@ const getOperation = options => ({
 
 const getUnauthenticatedOperation = options => Object.assign(getOperation(options), { security: [] })
 
-export default function get(options) {
+module.exports = options => {
   const opts = options || {}
   return opts.no401 ? getUnauthenticatedOperation(opts) : getOperation(opts)
 }

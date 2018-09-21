@@ -1,7 +1,6 @@
-import test from 'ava'
-import swaggerParser from 'swagger-parser'
-
-import swaggerHelper from '..'
+const test = require('ava')
+const swaggerParser = require('swagger-parser')
+const swaggerHelper = require('..')
 
 test('should support adding custom operations to the swagger document', async t => {
   const swagger = swaggerHelper.getBase({

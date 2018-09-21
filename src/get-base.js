@@ -91,6 +91,6 @@ const getBase = options => ({
   tags: [],
 })
 
-export default function get(options) {
+module.exports = options => {
   return getBase(options || {})
 }

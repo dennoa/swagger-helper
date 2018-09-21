@@ -1,5 +1,5 @@
-import test from 'ava'
-import swaggerHelper from '..'
+const test = require('ava')
+const swaggerHelper = require('..')
 
 const { responses } = swaggerHelper.getBase()
 

@@ -1,7 +1,5 @@
-import test from 'ava'
-import swaggerHalper from '..'
-
-const { getOperation } = swaggerHalper
+const test = require('ava')
+const { getOperation } = require('..')
 
 test('should allow specification of a summary', t => {
   const options = { summary: 'test' }

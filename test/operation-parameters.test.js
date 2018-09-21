@@ -1,7 +1,5 @@
-import test from 'ava'
-import swaggerHelper from '..'
-
-const { getOperation } = swaggerHelper
+const test = require('ava')
+const { getOperation } = require('..')
 
 test('should allow specification of a request body', t => {
   const op = getOperation({ reqBody: 'testBodyDef' })

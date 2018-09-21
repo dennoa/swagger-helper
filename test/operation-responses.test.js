@@ -1,7 +1,5 @@
-import test from 'ava'
-import swaggerHelper from '..'
-
-const { getOperation } = swaggerHelper
+const test = require('ava')
+const { getOperation } = require('..')
 
 const statusCodes = ['204', '401', '404', '500']
 statusCodes.forEach(code => {

@@ -1,7 +1,7 @@
-import getBase from './get-base'
-import getOperation from './get-operation'
+const getBase = require('./get-base')
+const getOperation = require('./get-operation')
 
-export default {
+module.exports = {
   getBase,
   getOperation,
 }

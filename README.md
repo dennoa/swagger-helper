@@ -10,9 +10,9 @@ See test/index.js for a contrived usage example.
 
 ## Example usage
 
-1.  Get the base documentation. This returns a Javascript Object with the required swagger doc structure and some common bits such as security and standard responses. The intent is that swagger paths, definitions, etc. specific to each operation are added to this.
+1. Get the base documentation. This returns a Javascript Object with the required swagger doc structure and some common bits such as security and standard responses. The intent is that swagger paths, definitions, etc. specific to each operation are added to this.
 
-        import swaggerHelper from 'swagger-doc-helper'
+        const swaggerHelper = require('swagger-doc-helper')
 
         // Get the base JSON with the swagger doc structure and some common bits.
         // This gives valid swagger documentation, just with no paths as yet
@@ -61,7 +61,7 @@ See test/index.js for a contrived usage example.
 
 3. Because each entity requires entries in multiple swagger doc locations (paths, defintiions, etc.), these need to be deep-merged with other entities into the base doc.
 
-        import merge from 'deepmerge'
+        const merge = require('deepmerge')
 
         const finalDoc = merge(baseDoc, userDoc)
 

@@ -1,5 +1,5 @@
-import test from 'ava'
-import swaggerHelper from '..'
+const test = require('ava')
+const swaggerHelper = require('..')
 
 test('should allow title to be specified', t => {
   const title = 'Test API'
